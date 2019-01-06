@@ -8,5 +8,4 @@ slide-number: true
 highlight: vs
 code-line-numbers: false
 remote-control: true
-footnote: "Docker Einführung"
-pro-menus-hidden : false
+footnote: "Einführung Docker"

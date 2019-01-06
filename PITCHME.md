@@ -1,12 +1,14 @@
-# Docker Einführung
+# Einführung Docker 
 
 #### MUC, 08.01.2019
 
 ---
 
-## Content
+## Wer bin ich?
 
-* Basics |
+* Lukas Grams
+* Informatikstudent, 7. Semester
+* Security-Fokus |
 * Service-to-Service authentication and authorization |
 * OAuth2 |
 * OpenID Connect |
