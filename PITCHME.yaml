@@ -1,0 +1,12 @@
+theme : beige
+layout: center
+logo : assets/images/logo.png
+theme-override : assets/css/PITCHME.css
+transition : slide
+published : false
+slide-number: true
+highlight: vs
+code-line-numbers: false
+remote-control: true
+footnote: "Microservices 2018"
+pro-menus-hidden : false

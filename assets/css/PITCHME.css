@@ -1,0 +1,171 @@
+.reveal {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #333; }
+
+span.byline,
+span.aside {
+  color: #bbb;
+}
+
+span.byline {
+  font-size: 80%;
+}
+
+span.aside {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.reveal section a {
+  color: #e49436;
+  text-decoration: underline;
+}
+
+.reveal section a:hover {
+  color: #e7ad52;
+}
+
+.fa-pad-left {
+  margin-left: 10px;
+}
+
+.reveal section ul li {
+  font-size: 0.8em;
+}
+
+.reveal p span.slide-title {
+  color: #e49436;
+  font-size: 1.55em;
+  margin: 0 0 60px 0;
+  font-family: "Montserrat", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+  display: block;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal pre code {
+  font-family: "Fira Code", Hasklig, monospace;
+}
+
+.reveal table th {
+  text-align: center;
+}
+
+.reveal table td {
+  text-align: center;
+}
+
+.reveal table {
+  font-size: 30px;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-family: "League Gothic", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: 3em;
+}
+
+.twocolumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+table.default {
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: #999;
+  margin: 0px auto;
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+th.default {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #999;
+  color: #fff;
+  background-color: #26ADE4;
+  text-align: center
+}
+
+td.odd {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #999;
+  color: #444;
+  text-align: center;
+  background-color: #D2E4FC;
+}
+
+td.even {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #999;
+  color: #444;
+  text-align: center;
+  background-color: #F7FDFA;
+}
