@@ -23,7 +23,8 @@
 @ulend
 @snapend
 
----
++++
+
 @snap[north]
 ## Disclaimer
 @snapend
@@ -33,7 +34,22 @@
 - Effizienz > Professionalität
 @ulend
 
+---
+
+@snap[north]
+## Agenda
+@snapend
+
+@ul
+- Docker - Was ist das, kann man das essen?
+- Wie kann man das benutzen?
+- Praxisbeispiel
+- 
+- Effizienz > Professionalität
+@ulend
 +++
+
+<!---
 
 ### Authentication
 
@@ -626,3 +642,5 @@ OpenID Connect specifies just 3 flows:
     </td>
   </tr>
 </table>
+
+-->
