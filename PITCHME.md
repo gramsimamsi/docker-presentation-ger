@@ -28,12 +28,10 @@
 ## Disclaimer
 @snapend
 
-@snap[south]
 @ul
 - Wissen vermitteln > Kompetenz zeigen
 - Effizienz > Professionalität
 @ulend
-@snapend
 
 +++
 
