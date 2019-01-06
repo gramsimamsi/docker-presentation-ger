@@ -17,6 +17,7 @@
 * Service-to-Service authentication and authorization |
 * OAuth2 |
 * OpenID Connect |
+@snapend
 
 ---
 
