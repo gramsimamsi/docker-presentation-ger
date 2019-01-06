@@ -14,9 +14,9 @@
 @snapend
 
 @snap[east]
-* Service-to-Service authentication and authorization |
-* OAuth2 |
-* OpenID Connect |
+* Service-to-Service authentication and authorization
+* OAuth2
+* OpenID Connect
 @snapend
 
 ---
