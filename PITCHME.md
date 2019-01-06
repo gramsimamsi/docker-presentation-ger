@@ -19,13 +19,21 @@
 @ul
 - Container-Erfahrung als Werksstudent
 - Mehrere Vorlesungen zum Thema
-- **Bei weitem kein Spezialist**
+- Bei weitem **kein Spezialist**
 @ulend
 @snapend
 
 ---
+@snap[north]
+## Disclaimer
+@snapend
 
-## Basics
+@snap[south]
+@ul
+- Wissen vermitteln > Kompetenz zeigen
+- Effizienz > Professionalität
+@ulend
+@snapend
 
 +++
 
