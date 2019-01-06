@@ -17,9 +17,9 @@
 
 @snap[east]
 @ul
-- Lukas Grams
-- Informatikstudent, 7. Semester
-- Security-Fokus 
+- Container-Erfahrung als Werksstudent
+- Mehrere Vorlesungen zum Thema
+- **Bei weitem kein Spezialist**
 @ulend
 @snapend
 
