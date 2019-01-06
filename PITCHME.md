@@ -8,15 +8,19 @@
 @snapend
 
 @snap[west]
-* Lukas Grams
-* Informatikstudent, 7. Semester
-* Security-Fokus 
+@ul
+- Lukas Grams
+- Informatikstudent, 7. Semester
+- Security-Fokus 
+@ulend
 @snapend
 
 @snap[east]
-* Service-to-Service authentication and authorization
-* OAuth2
-* OpenID Connect
+@ul
+- Lukas Grams
+- Informatikstudent, 7. Semester
+- Security-Fokus 
+@ulend
 @snapend
 
 ---
