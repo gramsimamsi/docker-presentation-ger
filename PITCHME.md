@@ -3,15 +3,15 @@
 #### MUC, 08.01.2019
 
 ---
-
+@snap[north]
 ## Wer bin ich?
+@snapend
 
 @snap[west]
 * Lukas Grams
 * Informatikstudent, 7. Semester
-* Security-Fokus 
+* Security-Fokus |
 @snapend
- |
 
 @snap[east]
 * Service-to-Service authentication and authorization |
