@@ -6,9 +6,14 @@
 
 ## Wer bin ich?
 
+@snap[west]
 * Lukas Grams
 * Informatikstudent, 7. Semester
-* Security-Fokus |
+* Security-Fokus 
+@snapend
+ |
+
+@snap[east]
 * Service-to-Service authentication and authorization |
 * OAuth2 |
 * OpenID Connect |
