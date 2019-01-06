@@ -41,11 +41,11 @@
 @snapend
 
 @ul
-- Docker - Was ist das, kann man das essen?
-- Wie kann man das benutzen?
-- Praxisbeispiel
-- 
-- Effizienz > Professionalität
+- Docker - Was ist das | , kann man das essen?
+- Wofür?
+- Wie?
+- Beispiele
+- Wie weiter?
 @ulend
 +++
 
