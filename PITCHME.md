@@ -10,7 +10,7 @@
 @snap[west]
 * Lukas Grams
 * Informatikstudent, 7. Semester
-* Security-Fokus |
+* Security-Fokus 
 @snapend
 
 @snap[east]
