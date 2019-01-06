@@ -8,5 +8,5 @@ slide-number: true
 highlight: vs
 code-line-numbers: false
 remote-control: true
-footnote: "Microservices 2018"
+footnote: "Docker Einführung"
 pro-menus-hidden : false
