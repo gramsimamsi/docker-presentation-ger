@@ -41,15 +41,14 @@
 @snapend
 
 @ul
-- Docker - Was ist das | , kann man das essen?
+- Docker - Was ist das, kann man das essen?
 - Wofür?
 - Wie?
 - Beispiele
 - Wie weiter?
 @ulend
-+++
 
-<!---
+Note:
 
 ### Authentication
 
