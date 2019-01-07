@@ -51,12 +51,12 @@
 
 Note:
 
-Einführung, Vergleich zu VMs
-Einsatzmöglichkeiten
-Einführung 2
-Bedienungsanleitung
-Beispiele
-Recherche-Links
+Einführung, Vergleich zu VMs  
+Einsatzmöglichkeiten  
+Einführung 2  
+Bedienungsanleitung  
+Beispiele  
+Recherche-Links  
 Best Practices
 
 ---
@@ -75,7 +75,7 @@ Best Practices
 
 Note:
 
-Linux Container allgemein, nicht nur Docker
+Linux Container allgemein, nicht nur Docker  
 Weiß nicht viel, kurzer Abriss zu beidem
 
 +++
@@ -106,7 +106,7 @@ Prozesse sehen Unterschiedliches
 
 Note:
 
-Einschränkung binär oder graduell
+Einschränkung binär oder graduell  
 -> Prozess darf nicht auf GPU oder nur X shares
 
 +++
@@ -130,9 +130,9 @@ Einschränkung binär oder graduell
 Note:
 
 beliebig einstellen wer was sieht  
-für docker: alle starten bei null, kochen eigenes süppchen
-optimierung: manche teilen sich noch sachen, nicht wichtig
-sieht ähnlich aus wie VM
+für docker: alle starten bei null, kochen eigenes süppchen  
+optimierung: manche teilen sich noch sachen, nicht wichtig  
+sieht ähnlich aus wie VM  
 
 +++
 
@@ -140,9 +140,53 @@ sieht ähnlich aus wie VM
 
 Note:
 
-
+Kein Hypervisor mehr  
+Keine parallelen OS  
+Docker-"Programm" verwaltet
 
 +++
+
+@snap[west]
+## Geschichtsstunde!
+
+@ul
+- Firma begonnen 2013 als dotCloud
+- Rebranding zu Docker Inc.
+- Open-Source Projekt mit "Freemium Modell"
+- angefangen auf LXC-Basis
+- jetzt direkt auf Kernel
+@ulend
+
+@snapend
+
+
+@snap[east span-20]
+![](assets/images/docker_logo.png)
+@snapend
+
+Note:
+
+Enterprise Maintainer, OS -> cool  
+Premium-Features wären Bonus für Production  
+(Security, Private Repos, ...)
+
++++
+
+## Alternativen
+
+@ul
+- FreeBSD: Jails
+- Solaris: Zones  
+- Linux: Google Containers, **LXC**, ...
+- Docker = King
+@ulend
+
+Note:
+
+Alternativen mit selber Idee, unterschiedlicher Umsetzung  
+LXC mehr Prozesse, Docker einer pro Container
+Docker mit Abstand am verbreitetsten  
+-> bester Support, mehr Tools drumrum
 
 ---
 
