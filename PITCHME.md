@@ -109,19 +109,17 @@ Note:
 Einschränkung binär oder graduell
 -> Prozess darf nicht auf GPU oder nur X shares
 
----?image=assets/images/thinking_face.png&size=20% auto
-@title[Was bringt uns das?]
-
 +++
 
 @snap[west]
 ## Was bringt uns das?
 
 @ul
-- Beschränkt Zugriff auf...
-- Ressourcen (RAM, CPU, ...)
-- Geräte (Tastatur, WLAN, ...)
+- verschiedene Prozesse, vollkommen andere Umgebungen
+- aber: gemeinsamer Kernel
+- "VM-light"
 @ulend
+
 @snapend
 
 @snap[east span-20]
@@ -131,8 +129,16 @@ Einschränkung binär oder graduell
 
 Note:
 
-Einschränkung binär oder graduell
--> Prozess darf nicht auf GPU oder nur X shares
+beliebig einstellen wer was sieht
+für docker: alle starten bei null, kochen eigenes süppchen
+optimierung: manche teilen sich noch sachen, nicht wichtig
+sieht ähnlich aus wie VM
+
++++
+
+![](assets/images/containers_vms.png)
+
+---
 
 ### Authentication
 
