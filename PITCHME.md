@@ -42,13 +42,100 @@
 
 @ul
 - Docker - Was ist das, kann man das essen?
-- Wofür?
-- Wie?
-- Beispiele
-- Wie weiter?
+- Wofür brauch ich das?
+- Wie kann ich das benutzen?
+- Praxisbeispiele!
+- Wie kann ich weitermachen?
+- Tipps
 @ulend
 
 Note:
+
+Einführung, Vergleich zu VMs
+Einsatzmöglichkeiten
+Einführung 2
+Bedienungsanleitung
+Beispiele
+Recherche-Links
+Best Practices
+
++++
+
+## Docker
+### Was ist das, kann man das essen?
+
+---
+
+@snap[north]
+## Technische Grundlage
+@snapend
+
+@ul
+- Zwei Features des Linux-Kernels
+- Process namespaces
+- Control groups (cgroups)
+@ulend
+
+Note:
+
+Linux Container allgemein, nicht nur Docker
+Weiß nicht viel, kurzer Abriss zu beidem
+
+---
+
+@snap[north]
+## namespaces
+@snapend
+
+@ul
+- Beschränkt Sichtbarkeit auf...
+- Prozesse
+- Netzwerk
+- Dateisystem
+- Hostnamen
+@ulend
+
+Note:
+
+Prozesse sehen Unterschiedliches
+1 Rechner, 2 Prozesse, 2 Hostnamen
+
+---
+
+@snap[north]
+## cgroups
+@snapend
+
+@ul
+- Beschränkt Zugriff auf...
+- Ressourcen (RAM, CPU, ...)
+- Geräte (Tastatur, WLAN, ...)
+@ulend
+
+Note:
+
+Einschränkung binär oder graduell
+-> Prozess darf nicht auf GPU oder nur X shares
+
+---?image=assets/images/thinging_face.png&size=80% auto
+@title[Was bringt uns das?]
+
+--- 
+
+@snap[north]
+## Was bringt uns das?
+@snapend
+
+@ul
+- Beschränkt Zugriff auf...
+- Ressourcen (RAM, CPU, ...)
+- Geräte (Tastatur, WLAN, ...)
+@ulend
+
+Note:
+
+Einschränkung binär oder graduell
+-> Prozess darf nicht auf GPU oder nur X shares
 
 ### Authentication
 
