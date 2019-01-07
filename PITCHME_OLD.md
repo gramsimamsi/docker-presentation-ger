@@ -1,5 +1,21 @@
 
 
+Stell dir vor, VMs...
+@ul
+- neu-anlegen ginge in Sekunden
+- wären sofort arbeitsfähig nach Hochfahren
+- fahren in <10 Sekunden hoch
+- können jederzeit wegsterben
+- vergessen dabei alles seit Start
+@ulend
+
+Note:
+
+Neu-Anlegen braucht einmalig download/build, danach beliebig oft "duplizierbar"  
+Wird am Anfang so konfiguriert dass er direkt seinen Zweck erfüllt  
+"hochfahren" ist hier einfaches Prozess-starten  
+vergessen kann umgangen werden, mehr später
+
 ---
 
 ### Authentication

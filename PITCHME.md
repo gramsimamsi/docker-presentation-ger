@@ -419,31 +419,57 @@ EKS = AWS-integriertes k8s
 +++
 
 Container sind **kein Ersatz** für VMs, sondern **eine Alternative**
-...und nützlich für Anderes
 
 +++
 
-Stell dir vor, VMs...
+## Software-Entwicklung
+
 @ul
-- neu-anlegen ginge in Sekunden
-- wären sofort arbeitsfähig nach Hochfahren
-- fahren in <10 Sekunden hoch
-- können jederzeit wegsterben
-- vergessen dabei alles seit Start
+- Software-Umfeld isolieren
+- Systemumfeld lokal mocken
+- Build-Prozesse isolieren
+- **Programmversionen leicht anpassbar**
 @ulend
 
 Note:
 
-Neu-Anlegen braucht einmalig download/build, danach beliebig oft "duplizierbar"  
-Wird am Anfang so konfiguriert dass er direkt seinen Zweck erfüllt  
-"hochfahren" ist hier einfaches Prozess-starten  
-vergessen kann umgangen werden, mehr später
+Bspw. unterschiedliche Python-Versionen Programme  
+Programm nutzt zwei unserer APIs? Lokal im Container ausführen!  
+Multistage-Docker, Beispiel später  
+Gold wert, vor allem bei Rollbacks/Downgrades!  
+In VM-Umfeldern sehr aufwendig  
 
----
++++
 
+## Auslieferung
 
-TODO:
-use cases
+@ul
+- Lauffertig auslieferbar
+- als Dockerfiles + docker-compose.yaml
+- Weniger Datentransfer notwendig
+@ulend
+
+Note:
+Keine installationsanleitung notwendig  
+textdateien sind schnell geschickt  
+braucht an sich schon weniger speicher  
+bei updates du cache-diffs -> noch weniger!  
+
++++
+
+## Betrieb
+
+@ul
+- schnellere Reaktion möglich  
+- weniger downtime, **weniger Kosten**  
+- vor allem in der Cloud
+@ulend
+
+Note:
+Reaktion automatisiert und manuell  
+sekunden statt minuten  
+Weniger Server-Ressourcen  
+Autoscaling -> cloud zahlt nur was gebraucht wird!  
 
 ---
 
@@ -452,6 +478,60 @@ use cases
 +++
 
 TODO
+https://docker-curriculum.com/#hello-world
+
++++
+
+## Praxisbeispiel Dockerfile
+
+```
+FROM node:10.14.2
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]
+```
+
++++
+
+## Beispiel docker-compose
+
+```
+version: '3' # specify docker-compose version
+
+# Define the services/ containers to be run
+services:
+
+  frontend:
+    restart: always
+    build: ./frontend # specify the directory of the Dockerfile
+    ports:
+      - "4200:4200" # specify port mapping
+
+  backend:
+    restart: always
+    build: ./backend # specify the directory of the Dockerfile
+    ports:
+      - "3000:3000" #specify ports mapping
+    links:
+      - database # link this service to the database service
+
+  database:
+    image: mongo # specify image to build container from
+    restart: always
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017" # specify port forwarding
+```
 
 ---
 
@@ -459,8 +539,18 @@ TODO
 
 +++
 
-TODO
+## Mit diesen Links!
+
+@ul
+- docker-curriculum.com
+- docs.docker.com
+- docs.docker.com/engine/reference/builder/
+- docs.docker.com/compose
+- hub.docker.com
+- github.com/wsargent/docker-cheat-sheet
+@ulend
+
 
 ---
 
-#Fragen?
+# Fragen?
