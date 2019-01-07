@@ -25,9 +25,7 @@
 
 +++
 
-@snap[north]
 ## Disclaimer
-@snapend
 
 @ul
 - Wissen vermitteln > Kompetenz zeigen
@@ -36,14 +34,12 @@
 
 ---
 
-@snap[north]
 ## Agenda
-@snapend
 
 @ul
 - Container - Was ist das, kann man das essen?
-- Wofür brauch ich das?
 - Docker & Friends
+- Wofür brauch ich das?
 - Wie kann ich das benutzen?
 - Praxisbeispiele!
 - Wie kann ich weitermachen?
@@ -177,6 +173,7 @@ Note:
 
 VMs gibts lange, sehen für Admin aus wie normaler Rechner  
 Anlaufzeiten beim Aufsetzen UND Hochfahren  
+(selbst mit ansible/chef/puppet)  
 höhö  
 Cluster = sahnehäubchen, kommt später
 
@@ -197,18 +194,6 @@ Alternativen mit selber Idee, unterschiedlicher Umsetzung
 LXC mehr Prozesse, Docker einer pro Container  
 Docker mit Abstand am verbreitetsten  
 -> bester Support, mehr Tools drumrum
-
----
-
-## Wofür brauch ich das?
-
-+++
-
-kein ersatz für VMs, sondern alternative
-
-+++
-
-use cases
 
 ---
 
@@ -243,6 +228,7 @@ Premium-Features wären Bonus für Production
 +++
 
 Image, container, engine
+(docker for windows, windows-docker anschneiden)
 
 +++
 
@@ -255,6 +241,36 @@ Docker-Compose
 +++
 
 Orchestrierung, Kubernetes, Rancher, Swarm, DC/OS, Cloud-Integration
+
+---
+
+## Wofür brauch ich das?
+
++++
+
+Container sind **kein Ersatz** für VMs, sondern **eine Alternative**
+
++++
+
+Stell dir vor, VMs...
+@ul
+- neu-anlegen ginge in Sekunden
+- wären sofort arbeitsfähig nach Hochfahren
+- fahren in <10 Sekunden hoch
+- können jederzeit wegsterben
+- vergessen dabei alles seit Start
+@ulend
+
+Note:
+
+Neu-Anlegen braucht einmalig download/build, danach beliebig oft "duplizierbar"  
+Wird am Anfang so konfiguriert dass er direkt seinen Zweck erfüllt  
+"hochfahren" ist hier einfaches Prozess-starten  
+vergessen kann umgangen werden, mehr später
+
+---
+
+use cases
 
 ---
 
