@@ -117,7 +117,7 @@ Note:
 Einschränkung binär oder graduell
 -> Prozess darf nicht auf GPU oder nur X shares
 
----?image=assets/images/thinking_face.png&size=80% auto
+---?image=assets/images/thinking_face.png&size=20% auto
 @title[Was bringt uns das?]
 
 --- 
