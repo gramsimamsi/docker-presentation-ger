@@ -129,7 +129,7 @@ Einschränkung binär oder graduell
 
 Note:
 
-beliebig einstellen wer was sieht
+beliebig einstellen wer was sieht  
 für docker: alle starten bei null, kochen eigenes süppchen
 optimierung: manche teilen sich noch sachen, nicht wichtig
 sieht ähnlich aus wie VM
@@ -137,6 +137,12 @@ sieht ähnlich aus wie VM
 +++
 
 ![](assets/images/containers_vms.png)
+
+Note:
+
+
+
++++
 
 ---
 
