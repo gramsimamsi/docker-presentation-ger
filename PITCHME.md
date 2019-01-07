@@ -41,9 +41,7 @@
 - Docker & Friends
 - Wofür brauch ich das?
 - Wie kann ich das benutzen?
-- Praxisbeispiele!
 - Wie kann ich weitermachen?
-- Tipps
 @ulend
 
 Note:
@@ -79,7 +77,7 @@ Weiß nicht viel, kurzer Abriss zu beidem
 
 ## namespaces
 @ul
-- Beschränkt Sichtbarkeit auf...
+- Beschränken Sichtbarkeit auf...
 - Prozesse
 - Netzwerk
 - Dateisystem
@@ -88,7 +86,7 @@ Weiß nicht viel, kurzer Abriss zu beidem
 
 Note:
 
-Prozesse sehen Unterschiedliches
+Prozesse sehen Unterschiedliches  
 1 Rechner, 2 Prozesse, 2 Hostnamen
 
 +++
@@ -96,7 +94,7 @@ Prozesse sehen Unterschiedliches
 ## cgroups
 
 @ul
-- Beschränkt Zugriff auf...
+- Beschränken Zugriff auf...
 - Ressourcen (RAM, CPU, ...)
 - Geräte (Tastatur, WLAN, ...)
 @ulend
@@ -247,7 +245,7 @@ Note:
 
 Engine = CLI + REST-API + server daemon  
 -> remote config möglich!
-Achtung: Auf Windows/MacOS nutzt es Hypervisor!
+Achtung: Auf Windows/MacOS nutzt es Hypervisor!  
 Was ist ein Image?
 
 +++
@@ -269,7 +267,7 @@ Quasi Pendant zu VM-Vorlagen (nicht snapshots!)
 Repositories, später  
 *Base Image* vs *From Scratch*, auch config möglich  
 Dockerfiles beschreibens, mehr später  
-Philosophie: Images sind vom Fleck weg minimal und "fertig"
+Philosophie: Images sind vom Fleck weg minimal und "fertig"  
 (Alles installed/config, kann loslegen, kein bloat)
 
 +++
@@ -290,8 +288,8 @@ Philosophie: Images sind vom Fleck weg minimal und "fertig"
 
 Note:
 
-Kernel-teilen mit Containern + Host wenn auf Linux
-Manches wird geteilt (optimierung, egal für Anwenden)
+Kernel-teilen mit Containern + Host wenn auf Linux  
+Manches wird geteilt (optimierung, egal für Anwenden)  
 Manches lässt sich explizit teilen (Ordner, Netzwerk, ...)
 
 +++
@@ -306,7 +304,7 @@ Manches lässt sich explizit teilen (Ordner, Netzwerk, ...)
 
 Note:
 
-Software-Umgebung ist isoliert und sofort einsatzbereit
+Software-Umgebung ist isoliert und sofort einsatzbereit  
 Braucht Docker-Engine und nen Linux-Kernel (Min-Version)
 
 +++
@@ -331,7 +329,7 @@ für dev einfach dockerfiles sharen, für prod besser private repo's
 
 +++
 
-## Exkursion - Designphilosophie!
+## Exkurs - Designphilosophie!
 
 @ul
 - Ein Container hat nur einen Job
@@ -396,7 +394,7 @@ Cloud-Deployment
 
 +++
 
-## Orchestrierung - pointer
+## Orchestrierung - Recherche-Hilfen
 
 @ul
 - Kubernetes (k8s) für Cluster-Management
@@ -421,6 +419,7 @@ EKS = AWS-integriertes k8s
 +++
 
 Container sind **kein Ersatz** für VMs, sondern **eine Alternative**
+...und nützlich für Anderes
 
 +++
 
@@ -442,6 +441,7 @@ vergessen kann umgangen werden, mehr später
 
 ---
 
+
 TODO:
 use cases
 
@@ -455,23 +455,7 @@ TODO
 
 ---
 
-## Praxisbeispiele!
-
-+++
-
-TODO
-
----
-
 ## Wie kann ich weitermachen?
-
-+++
-
-TODO
-
----
-
-## Tipps
 
 +++
 
