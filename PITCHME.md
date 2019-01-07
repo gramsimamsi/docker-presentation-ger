@@ -240,7 +240,7 @@ Premium-Features wären Bonus für Production
 - Verwaltet Docker-Zeug
 - Für Windows, MacOS, Linux-Distros
 - CLI für manuelles Ausführen
-- Beispiel: ```lukas@homepc: ~$ docker images```
+- Beispiel: ```sudo docker images```
 @ulend
 
 Note:
@@ -248,17 +248,119 @@ Note:
 Engine = CLI + REST-API + server daemon  
 -> remote config möglich!
 Achtung: Auf Windows/MacOS nutzt es Hypervisor!
+Was ist ein Image?
 
 +++
 
-TODO:
-Image, container, engine
-(docker for windows, windows-docker anschneiden)
+## Docker Images
+
+@ul
+- Vergleichbar mit .OVF/.OVA-Dateien
+- Viele fertig verfügbar
+- Jeder kann eigene erstellen oder bestehende anpassen
+- mithilfe von *Dockerfiles*
+- Gute Dockerfiles sparen Ressourcen!
+- Aus Images werden *Container* gestartet
+@ulend
+
+Note:
+
+Quasi Pendant zu VM-Vorlagen (nicht snapshots!)  
+Repositories, später  
+*Base Image* vs *From Scratch*, auch config möglich  
+Dockerfiles beschreibens, mehr später  
+Philosophie: Images sind vom Fleck weg minimal und "fertig"
+(Alles installed/config, kann loslegen, kein bloat)
 
 +++
 
-TODO:
-Docker Repo's, Docker Hub, private Repos
+## Docker Container
+
+@ul
+- Container teilen sich Linux Kernel
+- Jeder hat alles individuell:
+- Code
+- Programme
+- Bibliotheken
+- Umgebungsvariablen
+- Einstellungen
+- (Dateistruktur)
+- ...
+@ulend
+
+Note:
+
+Kernel-teilen mit Containern + Host wenn auf Linux
+Manches wird geteilt (optimierung, egal für Anwenden)
+Manches lässt sich explizit teilen (Ordner, Netzwerk, ...)
+
++++
+
+## Docker Container continued
+
+@ul
+- Isoliertes Stück Software
+- Enthält alles was es braucht
+- Kann irgendwo laufen
+@ulend
+
+Note:
+
+Software-Umgebung ist isoliert und sofort einsatzbereit
+Braucht Docker-Engine und nen Linux-Kernel (Min-Version)
+
++++
+
+## Images: Woher?
+
+@ul
+- von Grund auf selbst bauen (nicht empfohlen!)
+- bestehende Images nutzen und anpassen
+- Öffentliches Repo: hub.docker.com
+- private Repositories ($$$)
+@ulend
+
+Note:
+
+Standardmäßig mit nem dockerhub-image beginnen und anpassen  
+dockerHub hat verified status  
+(poisoned-image problem)  
+private repo's mit Docker EE / dockerhub subscription  
+ein kostenloses priv repo pro dockerhub acc  
+für dev einfach dockerfiles sharen, für prod besser private repo's  
+
++++
+
+## Zwischenschub - Designphilosophie!
+
+@ul
+- Ein Container hat nur einen Job
+- Kann nur genau so viel wie nötig
+- Minimaler Schaden bei Absturz
+- Kann jederzeit ersetzt werden
+@ulend
+
+Note:
+
+
+
++++
+
+
+## Docker Compose
+### Mehrere Container, eine Anwendung
+
++++
+
+## Docker Compose
+
+@ul
+- 
+@ulend
+
+Note:
+
+
 
 +++
 
