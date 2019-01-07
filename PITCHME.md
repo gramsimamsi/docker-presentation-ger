@@ -466,6 +466,7 @@ bei updates du cache-diffs -> noch weniger!
 @ulend
 
 Note:
+
 Reaktion automatisiert und manuell  
 sekunden statt minuten  
 Weniger Server-Ressourcen  
@@ -477,12 +478,24 @@ Autoscaling -> cloud zahlt nur was gebraucht wird!
 
 +++
 
-TODO
-https://docker-curriculum.com/#hello-world
+## Demo!
+
+
+Note: 
+
+sudo docker pull ubuntu  
+sudo docker images  
+sudo docker run ubuntu (nix)  
+sudo docker run -it ubuntu  
+strg + p + q  
+sudo docker ps  
+sudo docker attach *id*  
+sudo docker kill *id*  
+sudo docker rm *id*  
 
 +++
 
-## Praxisbeispiel Dockerfile
+## Beispiel Dockerfile
 
 ```
 FROM node:10.14.2
@@ -499,6 +512,10 @@ EXPOSE 3000
 
 CMD [ "npm", "start" ]
 ```
+
+Notes:
+
+Caching erklären!
 
 +++
 
@@ -532,6 +549,12 @@ services:
     ports:
       - "27017:27017" # specify port forwarding
 ```
+Note:
+
+cd ~/workspace/thirstygames_wt/
+sudo docker compose up  
+codeänderung frontend  
+-> nochmal! 
 
 ---
 
@@ -541,15 +564,12 @@ services:
 
 ## Mit diesen Links!
 
-@ul
 - docker-curriculum.com
 - docs.docker.com
 - docs.docker.com/engine/reference/builder/
 - docs.docker.com/compose
 - hub.docker.com
 - github.com/wsargent/docker-cheat-sheet
-@ulend
-
 
 ---
 
