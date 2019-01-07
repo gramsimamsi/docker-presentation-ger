@@ -227,19 +227,50 @@ Premium-Features wären Bonus für Production
 
 +++
 
+## Grundbegriffe!
+### Docker Engine, Images, Container
+
++++
+
+
+## Docker Engine
+
+@ul
+- Das "Programm" Docker
+- Verwaltet Docker-Zeug
+- Für Windows, MacOS, Linux-Distros
+- CLI für manuelles Ausführen
+- Beispiel: ```console test ```
+@ulend
+
+```console
+foo@bar:~$ whoami
+```
+Note:
+
+Engine = CLI + REST-API + server daemon  
+-> remote config möglich!
+Achtung: Auf Windows/MacOS nutzt es Hypervisor!
+
++++
+
+TODO:
 Image, container, engine
 (docker for windows, windows-docker anschneiden)
 
 +++
 
+TODO:
 Docker Repo's, Docker Hub, private Repos
 
 +++
 
+TODO:
 Docker-Compose
 
 +++
 
+TODO:
 Orchestrierung, Kubernetes, Rancher, Swarm, DC/OS, Cloud-Integration
 
 ---
@@ -270,6 +301,7 @@ vergessen kann umgangen werden, mehr später
 
 ---
 
+TODO:
 use cases
 
 ---
