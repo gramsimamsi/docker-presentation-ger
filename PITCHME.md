@@ -59,17 +59,14 @@ Beispiele
 Recherche-Links
 Best Practices
 
-+++
+---
 
 ## Docker
 ### Was ist das, kann man das essen?
 
----
++++
 
-@snap[north]
 ## Technische Grundlage
-@snapend
-
 @ul
 - Zwei Features des Linux-Kernels
 - Process namespaces
@@ -81,12 +78,9 @@ Note:
 Linux Container allgemein, nicht nur Docker
 Weiß nicht viel, kurzer Abriss zu beidem
 
----
++++
 
-@snap[north]
 ## namespaces
-@snapend
-
 @ul
 - Beschränkt Sichtbarkeit auf...
 - Prozesse
@@ -100,11 +94,9 @@ Note:
 Prozesse sehen Unterschiedliches
 1 Rechner, 2 Prozesse, 2 Hostnamen
 
----
++++
 
-@snap[north]
 ## cgroups
-@snapend
 
 @ul
 - Beschränkt Zugriff auf...
@@ -120,17 +112,22 @@ Einschränkung binär oder graduell
 ---?image=assets/images/thinking_face.png&size=20% auto
 @title[Was bringt uns das?]
 
---- 
++++
 
-@snap[north]
+@snap[west]
 ## Was bringt uns das?
-@snapend
 
 @ul
 - Beschränkt Zugriff auf...
 - Ressourcen (RAM, CPU, ...)
 - Geräte (Tastatur, WLAN, ...)
 @ulend
+@snapend
+
+@snap[east]
+![](assets/images/thinking_face.png)
+@snapend
+
 
 Note:
 
