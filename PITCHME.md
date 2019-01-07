@@ -125,7 +125,7 @@ Einschränkung binär oder graduell
 @snapend
 
 @snap[east]
-![](assets/images/thinking_face.png)
+![](assets/images/thinking_face.png&size=20%)
 @snapend
 
 
