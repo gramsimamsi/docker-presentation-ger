@@ -331,7 +331,7 @@ für dev einfach dockerfiles sharen, für prod besser private repo's
 
 +++
 
-## Zwischenschub - Designphilosophie!
+## Exkursion - Designphilosophie!
 
 @ul
 - Ein Container hat nur einen Job
@@ -342,10 +342,13 @@ für dev einfach dockerfiles sharen, für prod besser private repo's
 
 Note:
 
-
+Atomates Splitten -> keine Komplikationen  
+Minimaler Ressourcen-Overhead  
+Stateless!  
+Neuen Starten ist schnell & billig
+Microservice-Architektur!
 
 +++
-
 
 ## Docker Compose
 ### Mehrere Container, eine Anwendung
@@ -355,22 +358,61 @@ Note:
 ## Docker Compose
 
 @ul
-- 
+- mehrere Container auf einmal starten  
+- Zusammenspiel konfigurieren (docker-compose.yml)
 @ulend
 
 Note:
 
-
-
-+++
-
-TODO:
-Docker-Compose
+Container mit 'depends' in richtiger reihenfolge hochfahren  
+config: Mehrere Container ins selbe Netzwerk,  
+Port-Mapping, ENV-VARs, ...  
+alles was man händisch mit Docker CLI machen würde, hier automatisch
 
 +++
 
-TODO:
-Orchestrierung, Kubernetes, Rancher, Swarm, DC/OS, Cloud-Integration
+## Orchestrierung
+### jetzt wirds fancy
+
++++
+
+## Orchestrierung
+
+@ul
+- maximale Verfügbarkeit
+- Automatische Ressourcen-Anpassung
+- Serverupdates ohne downtime
+- ...
+@ulend
+
+Note:
+
+Achtung: ich weiß hier nur konzepte, keine Praxiserfahrung!  
+Verfügbarkeit über Health-Checks und automatisch neue Container  
+Autoscaling über Container zu-/abschalten  
+Updates und mehr durch Container rollover  
+Cloud-Deployment  
+...
+
++++
+
+## Orchestrierung - pointer
+
+@ul
+- Kubernetes (k8s) für Cluster-Management
+- Rancher, Minikube für k8s-Einstieg
+- Bei eigener HW: DC/OS
+- Cloud-Cluster: Amazon EKS
+
+@ulend
+
+Note:
+
+Es gibt Docker swarm, stirbt aber  
+k8s schwer im einstieg, alles stirbt sofort  
+Rancher = k8s-klicki-bunti  
+minikube = locales entwickeln  
+EKS = AWS-integriertes k8s  
 
 ---
 
