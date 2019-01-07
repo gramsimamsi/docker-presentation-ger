@@ -240,12 +240,9 @@ Premium-Features wären Bonus für Production
 - Verwaltet Docker-Zeug
 - Für Windows, MacOS, Linux-Distros
 - CLI für manuelles Ausführen
-- Beispiel: ```console test ```
+- Beispiel: ```lukas@homepc: ~$ docker images```
 @ulend
 
-```console
-foo@bar:~$ whoami
-```
 Note:
 
 Engine = CLI + REST-API + server daemon  
