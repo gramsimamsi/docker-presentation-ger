@@ -150,9 +150,10 @@ Docker-"Programm" verwaltet
 
 ### VMs
 @ul
-- verschiedene Prozesse, vollkommen andere Umgebungen
-- aber: gemeinsamer Kernel
-- "VM-light"
+- etablierte Hypervisor
+- "normales System"
+- Ressourcen-"Verschwendung"
+- Lange Anlaufzeiten
 @ulend
 
 @snapend
@@ -163,12 +164,18 @@ vs.
 
 ### Container
 @ul
-- verschiedene Prozesse, vollkommen andere Umgebungen
-- aber: gemeinsamer Kernel
-- "VM-light"
+- braucht Einarbeitung
+- Ressourcensparend
+- schneller oben
+- wird komplex ab Cluster
 @ulend
 
 @snapend
+
+Note:
+
+VMs gibts lange, sehen für Admin aus wie normaler Rechner
+Anlaufzeiten beim Aufsetzen UND Hochfahren
 
 
 +++
