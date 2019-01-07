@@ -147,6 +147,33 @@ Docker-"Programm" verwaltet
 +++
 
 @snap[west]
+
+### VMs
+@ul
+- verschiedene Prozesse, vollkommen andere Umgebungen
+- aber: gemeinsamer Kernel
+- "VM-light"
+@ulend
+
+@snapend
+
+vs.
+
+@snap[east]
+
+### Container
+@ul
+- verschiedene Prozesse, vollkommen andere Umgebungen
+- aber: gemeinsamer Kernel
+- "VM-light"
+@ulend
+
+@snapend
+
+
++++
+
+@snap[west]
 ## Geschichtsstunde!
 
 @ul
@@ -184,7 +211,7 @@ Premium-Features wären Bonus für Production
 Note:
 
 Alternativen mit selber Idee, unterschiedlicher Umsetzung  
-LXC mehr Prozesse, Docker einer pro Container
+LXC mehr Prozesse, Docker einer pro Container  
 Docker mit Abstand am verbreitetsten  
 -> bester Support, mehr Tools drumrum
 
